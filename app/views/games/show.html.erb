@@ -50,5 +50,10 @@
   <%= @game.stat %>
 </p>
 
+
+<h2> Team playing this game</h2>
+
+<h4><%=link_to @game.teams.first.name, team_path(@game.teams.first)  %> vs <%= link_to @game.teams.last.name, team_path(@game.teams.last) %></h4>
+
 <%= link_to 'Edit', edit_game_path(@game) %> |
 <%= link_to 'Back', games_path %>
