@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @league.title %>
+</p>
+
+<p>
+  <strong>Logo:</strong>
+  <%= image_tag @league.logo_url %>
+</p>
+
+<%= link_to 'Edit', edit_league_path(@league) %> |
+<%= link_to 'Back', leagues_path %>

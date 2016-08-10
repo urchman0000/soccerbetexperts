@@ -1,0 +1,2 @@
+json.extract! game, :id, :team_1, :team_1_news, :team_2, :team_2_news, :match_details, :featured_photo, :game_prediciton, :reason_for_bet_tip, :head_to_head, :stat, :created_at, :updated_at
+json.url game_url(game, format: :json)

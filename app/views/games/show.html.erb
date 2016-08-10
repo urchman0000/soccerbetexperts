@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Team 1:</strong>
+  <%= @game.team_1 %>
+</p>
+
+<p>
+  <strong>Team 1 news:</strong>
+  <%= @game.team_1_news %>
+</p>
+
+<p>
+  <strong>Team 2:</strong>
+  <%= @game.team_2 %>
+</p>
+
+<p>
+  <strong>Team 2 news:</strong>
+  <%= @game.team_2_news %>
+</p>
+
+<p>
+  <strong>Match details:</strong>
+  <%= @game.match_details %>
+</p>
+
+<p>
+  <strong>Featured photo:</strong>
+  <%= image_tag @game.featured_photo_url %>
+</p>
+
+<p>
+  <strong>Game prediciton:</strong>
+  <%= @game.game_prediciton %>
+</p>
+
+<p>
+  <strong>Reason for bet tip:</strong>
+  <%= @game.reason_for_bet_tip %>
+</p>
+
+<p>
+  <strong>Head to head:</strong>
+  <%= @game.head_to_head %>
+</p>
+
+<p>
+  <strong>Stat:</strong>
+  <%= @game.stat %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

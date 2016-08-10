@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team_1: 1
+  team_1_news: MyText
+  team_2: 1
+  team_2_news: MyText
+  match_details: MyText
+  featured_photo: MyString
+  game_prediciton: MyString
+  reason_for_bet_tip: MyText
+  head_to_head: MyText
+  stat: MyString
+
+two:
+  team_1: 1
+  team_1_news: MyText
+  team_2: 1
+  team_2_news: MyText
+  match_details: MyText
+  featured_photo: MyString
+  game_prediciton: MyString
+  reason_for_bet_tip: MyText
+  head_to_head: MyText
+  stat: MyString

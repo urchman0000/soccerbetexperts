@@ -1,0 +1,57 @@
+<%= form_for @game, html: { multipart: true } do |f| %>
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% @game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :team_1 %><br>
+    <%= f.number_field :team_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :team_1_news %><br>
+    <%= f.text_area :team_1_news %>
+  </div>
+  <div class="field">
+    <%= f.label :team_2 %><br>
+    <%= f.number_field :team_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :team_2_news %><br>
+    <%= f.text_area :team_2_news %>
+  </div>
+  <div class="field">
+    <%= f.label :match_details %><br>
+    <%= f.text_area :match_details %>
+  </div>
+  <div class="field">
+    <%= f.label :featured_photo %><br>
+    <%= f.file_field :featured_photo %>
+  </div>
+  <div class="field">
+    <%= f.label :game_prediciton %><br>
+    <%= f.text_field :game_prediciton %>
+  </div>
+  <div class="field">
+    <%= f.label :reason_for_bet_tip %><br>
+    <%= f.text_area :reason_for_bet_tip %>
+  </div>
+  <div class="field">
+    <%= f.label :head_to_head %><br>
+    <%= f.text_area :head_to_head %>
+  </div>
+  <div class="field">
+    <%= f.label :stat %><br>
+    <%= f.text_field :stat %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
